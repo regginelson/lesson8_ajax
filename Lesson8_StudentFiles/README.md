@@ -4,19 +4,17 @@
 LIS 2360:  Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+August 3, 2018
 
-### Student Name:  
-(First and Last Name)
+Reggi Nelson
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+In this assignment, we will display movie information using AJAX, JSON, and API.
 
 ### View Project:
-(Replace this statement with your Github Page URL that was created when you 
- published the project.)
+https://regginelson.github.io/lesson8_ajax/
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. JSON stands for Javascript Object Notation and is the syntax for storing and exchanging data.
+2. Value can be a string, a number, true or false, null, etc.
+3. Objects are wrapped in { }.

@@ -21,18 +21,19 @@ $(document).ready(function(){
                         will be the name of the movie the user enters into the textfield.
 
                 Example Request URL:
-                        https://api.themoviedb.org/3/search/movie?api_key=YOUR_API_KEY&query=big
+                        https://api.themoviedb.org/3/search/movie?api_key=c057f2984ef7d283c32daf62f30130cc&query=big
                         
                 TASK #1:
                         Insert YOUR API Key after the '=' inside of the single quotes.
-                        
+                        url: https://api.themoviedb.org/3/search/movie?api_key=c057f2984ef7d283c32daf62f30130cc&query=big
+                      
                 HINT:  Replace the text "INSERT-HERE" with your API Key.
 
             ************************************************************************************************/
 
             $.ajax({
                 //Insert YOUR API Key after the '=' inside the single quotes.
-                url:'https://api.themoviedb.org/3/search/movie?api_key=INSERT-HERE',
+                url:'https://api.themoviedb.org/3/search/movie?api_key=c057f2984ef7d283c32daf62f30130cc',
                 data: query
             })
             
@@ -56,9 +57,9 @@ $(document).ready(function(){
                  3.  Use the example above where the Movie Title was retrieved to complete this step!
                  
                  *********************************Insert Code Below********************************************/                
+            
                 
-                
-                
+                $("#overview").html(json.results[0].overview);
 
                 /***********************Retrieve Movie Release Date from Server & Add to HTML Document***********
                  TASK #7:  
@@ -72,7 +73,7 @@ $(document).ready(function(){
                  
                  *********************************Insert Code Below********************************************/               
 
-
+                $("#release_date").html(json.results[0].release_date);
 
 
                  /***********************Retrieve Movie Popularity Rate from Server & Add to HTML Document******
@@ -87,7 +88,7 @@ $(document).ready(function(){
                  
                  *********************************Insert Code Below********************************************/   
 
-  
+                $("#popularity").html(json.results[0].popularity);
 
                 
                  /*****************Retrieve Movie Original Language from Server & Add to HTML Document***********
@@ -101,7 +102,7 @@ $(document).ready(function(){
                  3.  Use the example above where the Movie Title was retrieved to complete this step!
                  
                  *********************************Insert Code Below********************************************/                 
-
+                $("#original_language").html(json.results[0].original_language);
 
 
                 //The following code retrieves the movie poster path from the JSON object retrieved from the TMDB 
